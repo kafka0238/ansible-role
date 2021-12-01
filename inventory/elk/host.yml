@@ -1,0 +1,20 @@
+all:
+  hosts:
+    elastic-ubuntu:
+      ansible_host: 51.250.10.239
+    kibana-ubuntu:
+      ansible_host: 51.250.7.38
+    filebeat-ubuntu:
+      ansible_host: 51.250.8.151
+    vars:
+      ansible_connection: ssh
+      ansible_user: kafka
+elasticsearch:
+  hosts:
+    elastic-ubuntu:
+kibana:
+  hosts:
+    kibana-ubuntu:
+filebeat:
+  hosts:
+    filebeat-ubuntu:
