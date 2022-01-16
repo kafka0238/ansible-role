@@ -1,6 +1,6 @@
 node("linux"){
     stage("Git checkout"){
-        git credentialsId: '5ac0095d-0185-431b-94da-09a0ad9b0e2c', url: 'git@github.com:kafka0238/ansible-role.git'
+        git credentialsId: '9804576d-4fc1-4ee2-8478-6138e22b6df2', url: 'git@github.com:kafka0238/ansible-role.git'
     }
     stage("Run playbook"){
         sh 'ansible-galaxy install -r requirements.yml -p roles --force'
