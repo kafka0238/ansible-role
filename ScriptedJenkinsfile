@@ -3,7 +3,6 @@ node("linux"){
         git credentialsId: '9804576d-4fc1-4ee2-8478-6138e22b6df2', url: 'git@github.com:kafka0238/ansible-role.git'
     }
     stage("Run playbook"){
-        sh 'ssh-keygen -t rsa -b 4096 -f id_rsa -q -C "your_email@example.com" -N ""'
         sh 'ansible-galaxy install -r requirements.yml -p roles --force'
         if (var.prod_run){
             sh 'ansible-playbook site.yml -i inventory/prod'
