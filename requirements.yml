@@ -9,5 +9,5 @@
     name: kibana
   - src: git@github.com:kafka0238/filebeat-role.git
     scm: git
-    version: "1.0.4"
+    version: "1.0.5"
     name: filebeat
